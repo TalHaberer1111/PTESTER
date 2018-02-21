@@ -1,0 +1,73 @@
+.page-id-9 {
+  .fullpage {
+  @media (min-width: 767px) {
+    border: 20px solid #EDEDED;
+    background-color: #EDEDED;
+  }
+}
+.hero-wrapper {
+  // height: 100vh;
+  width: 100%;
+  position: relative;
+  video {
+    position: static;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.5);
+  }
+}
+
+.panel {
+    width: 100%;
+    height: 100vh;
+    border-top: none;
+    // box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.5);
+  }
+
+// .zero {
+//   @media (min-width: 767px) {
+//     margin-bottom: 100px;
+//   }
+// }
+
+
+.one {
+  // background: url("../images/clocks.jpg") no-repeat;
+  // background-size: 98% auto;
+  // background-attachment: fixed;
+  // background-position: center center;
+  background-color: midnightblue;
+}
+
+.two {
+  background: url("../images/cameras.jpg") no-repeat;
+  background-size: 98% auto;
+  background-attachment: fixed;
+    background-position: center center;
+}
+
+
+.three {
+  background-color: whitesmoke;
+  box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.5);
+  border: 10px solid black;
+  // width: 96% !important;
+  margin-bottom: 50px;
+  // margin: 0 auto;
+  // display: block;
+}
+
+
+.four {
+  // background: url("../images/art.jpg") no-repeat;
+  // background-size: 98% auto;
+  // background-attachment: fixed;
+  //   background-position: center center;
+    background-color: midnightblue;
+    background-attachment: fixed;
+}
+
+}
