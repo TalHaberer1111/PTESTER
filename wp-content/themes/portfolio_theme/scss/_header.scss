@@ -11,16 +11,16 @@ header {
 }
 .hamburger-menu-wrapper {
   margin-top: 40px;
-  background: transparent;
+  // background: transparent;
   padding: 4px;
   z-index: 10000;
 	position: fixed;
-	top: 15px;
+	top: 0px;
   right: 15px;
 	margin: 1%;
 }
 
-.hamburger-menu-wrapper.bounce-effect { animation: bounce 0.3s ease 1; }
+.hamburger-menu-wrapper.bounce-effect { animation: bounce 0.5s ease-in 1; }
 
 .hamburger-menu {
   border: 0;
@@ -38,6 +38,8 @@ header {
   cursor: pointer;
   background: #BDBF09;
 }
+
+// .hamburger-menu:hover { height: 70px; }
 
 .hamburger-menu:focus { outline: none; }
 
@@ -67,8 +69,8 @@ header {
 .hamburger-menu span:after { bottom: -7px; }
 
 .hamburger-menu span:before, .hamburger-menu span:after {
-  transition-duration: 0.3s, 0.3s;
-  transition-delay: 0.3s, 0s;
+  transition-duration: 0.1s, 0.1s;
+  transition-delay: 0.1s, 0s;
 }
 
 .hamburger-menu span:before { transition-property: top, transform; }
@@ -132,7 +134,7 @@ bounce { 0% {
 	font-weight: 300;
 	opacity: 0;
  letter-spacing: 3px;
-  transition: all .4s ease-in;
+  transition: all .4s ease-out;
   text-align: center;
   margin: 3%;
 	@media(min-width: 767px) {
@@ -151,8 +153,9 @@ bounce { 0% {
   text-decoration: none;
   background-color: #BDBF09;
   padding: 4px 6px;
-  margin: 10px;
-  box-shadow: 9px 9px 3px #2292a4;
+  // margin: 10px;
+  box-shadow: 5px 5px 1px #2292a4;
+  opacity: 0.8;
 }
 
 

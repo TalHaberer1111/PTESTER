@@ -4,8 +4,8 @@
 get_header(); ?>
 
 <div id="wrapper" class="fullpage wrapper">
-  <div class="black-block"></div>
-  <div class="black-block2"></div>
+  <a href="http://www.google.com/"><div id="block" class="black-block"></div></a>
+  <div id="block" class="black-block2"></div>
   <section id"trigger4" class="panel zero">
     <div class="hero-wrapper">
       <div class="video-container">
@@ -30,6 +30,18 @@ get_header(); ?>
           .setClassToggle("#headerMain", "fadeInRight")
           .addTo(controller);
 
+          // build scene
+          var scene = new ScrollMagic.Scene({triggerElement: "#wrapper", duration: 0,})
+          // trigger animation by adding a css class
+          .setClassToggle("#block", "fade-in-three")
+          .addTo(controller);
+
+          // build scene
+          var scene = new ScrollMagic.Scene({triggerElement: "#wrapper", duration: 0,})
+          // trigger animation by adding a css class
+          .setClassToggle("#block", "fade-in-four")
+          .addTo(controller);
+
 
     </script>
 
@@ -39,8 +51,12 @@ get_header(); ?>
 
 
     <section class="panel one">
+      <div id="trigger22">
 
-      <div class="black-triangle"></div>
+
+      <div id="triangle1" class="black-triangle"></div>
+
+    </div>
       <div id="trigger11" class="video-container">
       <div class="container">
         <div class="row card-section">
@@ -88,6 +104,12 @@ get_header(); ?>
 
       // init controller
       var controller = new ScrollMagic.Controller();
+
+      // build scene
+      var scene = new ScrollMagic.Scene({triggerElement: "#wrapper", duration: 0,})
+      // trigger animation by adding a css class
+      .setClassToggle("#triangle1", "fadeInUpBig")
+      .addTo(controller);
 
       // build scene
       var scene = new ScrollMagic.Scene({triggerElement: "#trigger11", duration: 0,})
