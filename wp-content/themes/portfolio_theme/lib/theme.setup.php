@@ -2,12 +2,12 @@
 /*
 Set the content width based on the theme's design and stylesheet.
 */
-if ( ! isset( $content_width ) ) { 
-	$content_width = 960; 
+if ( ! isset( $content_width ) ) {
+	$content_width = 960;
 }
 
-/* 
-	Setup scripts, sidebars, menus, etc. 
+/*
+	Setup scripts, sidebars, menus, etc.
 */
 function basetheme_setup() {
 
@@ -17,12 +17,12 @@ function basetheme_setup() {
 
 	load_theme_textdomain( 'basetheme', get_template_directory() . '/languages' );
 
-	add_theme_support( 'title-tag' );	
+	add_theme_support( 'title-tag' );
 
 	add_theme_support( 'html5', array(
 		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
-	) );	
-		
+	) );
+
 	global $content_width;
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( $content_width, 9999, false );
@@ -41,7 +41,7 @@ function basetheme_setup() {
 		'gallery',
 		'caption',
 	) );
-	
+
 	/*add_theme_support( 'post-formats', array(
 		'aside', 'image', 'video', 'quote', 'link', 'gallery', 'status', 'audio', 'chat'
 	) );*/
@@ -49,7 +49,7 @@ function basetheme_setup() {
 add_action( 'after_setup_theme', 'basetheme_setup' );
 
 /* Register widgetized areas */
-function basetheme_widgets_init() 
+function basetheme_widgets_init()
 {
 	register_sidebar( array(
 		'name' => __( 'Blog Sidebar Widget Area', 'basetheme' ),
@@ -83,11 +83,18 @@ function basetheme_enqueue()
 	wp_register_script('jquery', get_template_directory_uri() . '/js/head/vendor/jquery.min.js', array(), null);
 	wp_enqueue_script('jquery');
 
+	wp_deregister_script('anchorscroll');
+	wp_register_script('anchorscroll', get_template_directory_uri() . '/js/head/vendor/jquery.anchorScroll.js', array(), null);
+	wp_enqueue_script('anchorscroll');
+
 	wp_enqueue_script('head', get_template_directory_uri() . '/dist/head.min.js', array(), cache_bust());
 
 	if ( is_singular() && get_option( 'thread_comments' ) ) { wp_enqueue_script( 'comment-reply' ); }
 
-	wp_enqueue_script('plugins', get_template_directory_uri() . '/dist/plugins.min.js', array('jquery'), cache_bust(), true);    
-	wp_enqueue_script('scripts', get_template_directory_uri() . '/dist/scripts.min.js', array('plugins'), cache_bust(), true);      
+	wp_enqueue_script('plugins', get_template_directory_uri() . '/dist/plugins.min.js', array('jquery'), cache_bust(), true);
+	wp_enqueue_script('scripts', get_template_directory_uri() . '/dist/scripts.min.js', array('plugins'), cache_bust(), true);
 }
 add_action('wp_enqueue_scripts', 'basetheme_enqueue');
+
+
+add_action('wp_enqueue_scripts', 'wpdocs_scripts_method');

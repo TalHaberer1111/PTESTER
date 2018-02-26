@@ -1,29 +1,23 @@
-// #header {
-// 	padding: 10px 0;
-//
-// 	#logo {
-// 		display: block;
-// 		margin: 0 auto;
-// 		text-align: center;
-// 	}
-//
-// 	@include media-breakpoint-up(sm) {
-// 		#logo {
-// 			float: left;
-// 			margin: 0;
-// 		}
-// 	}
-// }
-
+header {
+  position: relative;
+  .blackline {
+    position: fixed;
+    top: 0;
+    height: 20px;
+    width: 100%;
+    background-color: #BDBF09 !important ;
+    z-index: 9999;
+  }
+}
 .hamburger-menu-wrapper {
   margin-top: 40px;
   background: transparent;
-  padding: 10px;
+  padding: 4px;
   z-index: 10000;
 	position: fixed;
-	top: 10px;
-	left: 0px;
-	margin: 5%;
+	top: 15px;
+  right: 15px;
+	margin: 1%;
 }
 
 .hamburger-menu-wrapper.bounce-effect { animation: bounce 0.3s ease 1; }
@@ -35,14 +29,14 @@
   position: relative;
   overflow: hidden;
   padding: 10px;
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
   font-size: 0;
   text-indent: -9999px;
   cursor: pointer;
   z-index: 10000;
   cursor: pointer;
-  background: rgba(255,255,255,0.3);
+  background: #BDBF09;
 }
 
 .hamburger-menu:focus { outline: none; }
@@ -50,10 +44,11 @@
 .hamburger-menu span {
   display: block;
   position: absolute;
-  top: 17px;
+  top: 22px;
   left: 5px;
   right: 5px;
-  height: 2px;
+  height: 3px;
+  line-height: 3px;
   background: #2e2d2d;
 }
 
@@ -62,7 +57,7 @@
   display: block;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: 3px;
   background-color: #2e2d2d;
   content: "";
 }
@@ -114,11 +109,12 @@ bounce { 0% {
   min-width: 220px;
 	display: block;
 	margin: 0 auto;
-	text-align: left;
-	@media(min-width: 767px) {
-		text-align: right;
-		margin-left: -280px;
-	}
+	text-align: center;
+  height: auto;
+	// @media(min-width: 767px) {
+	// 	text-align: right;
+	// 	margin-left: -280px;
+	// }
 }
 
 .menu-list {
@@ -131,33 +127,35 @@ bounce { 0% {
 }
 
 .menu-list a {
-  color: #00399e;
-	text-shadow: .5px .5px 5px black;
-	font-weight: 600;
-	font-style: italic;
+  color: #BDBF09;
+  font-family: 'Voltaire', sans-serif;
+	font-weight: 300;
 	opacity: 0;
-  // text-decoration: none;
-  // font-size: 38px;
-  display: inline-block;
-  transition: all 0.5s ease;
-	transform: rotate(352deg) ;
--webkit-transform: rotate(352deg);
+ letter-spacing: 3px;
+  transition: all .4s ease-in;
+  text-align: center;
+  margin: 3%;
 	@media(min-width: 767px) {
-		font-size: 34px;
-	  margin: 5px 0px;
+		font-size: 36px;
+	 line-height: 80px;
 	}
 	@media(max-width: 767px) {
 		font-size: 26px;
-	  margin: 5px 0px;
-		padding-left: 10%;
+    line-height: 60px;
 	}
 
 }
 
 .menu-list a:hover {
-	color: royalblue;
-	text-decoration: line-through;
+  color: black;
+  text-decoration: none;
+  background-color: #BDBF09;
+  padding: 4px 6px;
+  margin: 10px;
+  box-shadow: 9px 9px 3px #2292a4;
 }
+
+
 
 .menu-overlay {
   transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
@@ -167,8 +165,14 @@ bounce { 0% {
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(255,255,255,0.9);
-  z-index: 1111;
+  background: rgb(0, 0, 0); /* Old Browsers */
+  background: -webkit-linear-gradient(top,rgb(0, 0, 0),rgb(33,79,107)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(top,rgb(0, 0, 0),rgb(33,79,107)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(top,rgb(0, 0, 0),rgb(33,79,107)); /*Fx 3.6-15*/
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(33,79,107)); /*Standard*/
+  z-index: 9999;
 	width: 100%;
 	height: 100%;
+  border-bottom: 20px solid #BDBF09;
+  border-right: 15px solid #BDBF09;
 }

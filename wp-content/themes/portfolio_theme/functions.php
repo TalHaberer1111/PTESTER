@@ -5,7 +5,7 @@
 */
 function cache_bust() { return '050317'; }
 
-/* 
+/*
 	Include theme files.
 	Functions and hooks should go in these files, not in functions.php.
 */
