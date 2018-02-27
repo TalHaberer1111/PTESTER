@@ -1,0 +1,28 @@
+.page-template-template-multiscroll {
+  #pinContainer {
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+ }
+ .panel {
+   height: 100vh;
+   width: 100%;
+   position: absolute;
+ }
+
+ .blue {
+   background-color: blue;
+ }
+ .green {
+   background-color: green;
+ }
+ .red {
+   background-color: red;
+ }
+ .yellow {
+   background-color: yellow;
+ }
+ footer {
+   display: none;
+ }
+}

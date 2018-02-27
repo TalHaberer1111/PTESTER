@@ -36,14 +36,14 @@ $(document).ready(function($) {
 
 </script>
 </head>
-<body <?php body_class(); ?>>
+<body id="trigger14" <?php body_class(); ?>>
 <div id="wrapper">
 	<!-- <a href="#main" class="sr-only sr-only-focusable skipnav"><?php _e('Skip to main content', 'basetheme'); ?></a> -->
 	<header id="header" class="clearfix">
 		<div class="blackline"></div>
 		<div class="menu-overlay"></div>
 			<div class="menu">
-				<div class="hamburger-menu-wrapper">
+				<div id="head-menu" class="hamburger-menu-wrapper fadeInDown2">
 				<button class="hamburger-menu">
 				  <span>toggle menu</span>
 				</button>

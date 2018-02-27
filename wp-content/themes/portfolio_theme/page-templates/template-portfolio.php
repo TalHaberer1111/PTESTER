@@ -11,11 +11,10 @@ get_header(); ?>
       <div class="video-container">
           <!-- <div class="filter"></div> -->
           <video autoplay loop>
-              <!-- <source src="<?php echo get_stylesheet_directory_uri(); ?>/videos/graphics.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser. -->
+              <source src="<?php echo get_stylesheet_directory_uri(); ?>/videos/For_wes.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
           </video>
       </div>
     </div>
-
     <h1 id="headerMain">Something Here</h1>
 
     <script>
@@ -141,10 +140,10 @@ get_header(); ?>
 
     <section class="panel two">
       <div class="video-container">
-          <!-- <div class="filter"></div> -->
-          <video autoplay loop>
-              <!-- <source src="<?php echo get_stylesheet_directory_uri(); ?>/videos/graphics.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser. -->
-          </video>
+        <div class="slider-wrapper">
+          <?php echo do_shortcode('[slick-slider category="2" design="design-5" centermode="true" fade="true" arrows="false" autoplay="true" speed="2000"]'); ?>
+        </div>
+
       </div>
     </section>
     <section class="panel three mx-auto">
@@ -183,12 +182,13 @@ get_header(); ?>
     					triggerElement: slides[i]
     				})
             .on("enter", function (event) {
-            $('video').get(0).play();
+            $('video').get(0).play(3000);
            })
     				.setPin(slides[i])
     				.addTo(controller);
     		}
     	});
+
 
         	});
     </script>

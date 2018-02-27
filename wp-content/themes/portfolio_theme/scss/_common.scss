@@ -22,7 +22,17 @@ footer {
 	 border-bottom: 15px solid #e6e6e6;
 	 opacity: 0;
 	 border-right: 20px solid black;
-	 border-left: 20px solid black;
+	 border-left: 20px solid #183649;
+	 .logo-center {
+		 padding-top: 100px;
+		 img {
+			height: auto;
+			width: 80px;
+			margin: 0 auto;
+			display: block;
+		}
+
+	 }
 }
 
 body {

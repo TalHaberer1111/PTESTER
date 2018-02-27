@@ -2,7 +2,7 @@
   font-family: 'Work Sans', sans-serif;
   position: relative;
   .wrapper {
-    border-left: 20px solid black;
+    border-left: 20px solid #183649;
     border-right: 20px solid black;
   }
   .blackline {
@@ -34,7 +34,7 @@
     position: fixed;
     top: 340px;
     left: 0px;
-    background-color: black;
+    background-color: #183649;
     z-index: 9000;
     border-bottom-right-radius: 50px;
     @media(max-width: 767px) {
@@ -57,18 +57,26 @@
   }
 
 .zero {
-    background-color: whitesmoke;
+    background-color: black;
     position: relative;
     height: 70vh;
+    @media(max-width: 767px) {
+      height: 28vh;
+    }
+    video {
+      position: relative;
+    opacity: 0.6;
+    width: 100%;
+    }
     h1 {
       position: absolute;
       top: 30%;
       bottom: 50%;
       width: 100%;
-      font-size: 220px;
+      font-size: 180px;
       z-index: 7;
       text-align: center;
-      color: black;
+      color:  white;
       font-family: 'Yanone Kaffeesatz', sans-serif;
       opacity: 0;
       @media(max-width: 1024px) and (min-width: 767px) {
@@ -116,24 +124,32 @@ margin-bottom: 420px !important;
   background-color: #2292A4;
   background-attachment: fixed;
     background-position: center center;
+    .slider-wrapper {
+      max-width: 900px;
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+      padding-top: 120px;
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+      color: black;
+      .wpsisac-slick-slider.design-5 .slick-image-slide .slide-wrap .slick-slider-short-content p {
+        font-size: 40px;
+        line-height: 56px;
+        @media(max-width: 767px) {
+        font-size: 32px !important;
+      }
+    }
+}
 }
 
 
 .three {
   background-color: #dfe7ec;
-  // box-shadow: 9px 20px 40px rgba(0,0,0,0.9);
-  // width: 96% !important;
   margin-bottom: 50px;
-  // margin: 0 auto;
-  // display: block;
 }
 
 
 .four {
-  // background: url("../images/art.jpg") no-repeat;
-  // background-size: 98% auto;
-  // background-attachment: fixed;
-  //   background-position: center center;
   background: rgb(0, 0, 0); /* Old Browsers */
   background: -webkit-linear-gradient(top,rgb(0, 0, 0),rgb(33,79,107)); /*Safari 5.1-6*/
   background: -o-linear-gradient(top,rgb(0, 0, 0),rgb(33,79,107)); /*Opera 11.1-12*/
@@ -143,15 +159,16 @@ margin-bottom: 420px !important;
 }
 
 
-}
+//
+// .learn-more-section {
+//   height: 200px;
+//   width: 100%;
+//   background-color: #e9e9e9;
+//   a {
+//     display: block;
+//     margin: 0 auto;
+//     margin-top: 20%;
+//   }
+// }
 
-.learn-more-section {
-  height: 200px;
-  width: 100%;
-  background-color: #e9e9e9;
-  a {
-    display: block;
-    margin: 0 auto;
-    margin-top: 20%;
-  }
 }

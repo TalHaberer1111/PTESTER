@@ -15,9 +15,10 @@ header {
   padding: 4px;
   z-index: 10000;
 	position: fixed;
-	top: 0px;
+	top: -3px;
   right: 15px;
 	margin: 1%;
+  // opacity: 0;
 }
 
 .hamburger-menu-wrapper.bounce-effect { animation: bounce 0.5s ease-in 1; }
@@ -130,8 +131,8 @@ bounce { 0% {
 
 .menu-list a {
   color: #BDBF09;
-  font-family: 'Voltaire', sans-serif;
-	font-weight: 300;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: 900;
 	opacity: 0;
  letter-spacing: 3px;
   transition: all .4s ease-out;
@@ -139,11 +140,11 @@ bounce { 0% {
   margin: 3%;
 	@media(min-width: 767px) {
 		font-size: 36px;
-	 line-height: 80px;
+	 line-height: 60px;
 	}
 	@media(max-width: 767px) {
 		font-size: 26px;
-    line-height: 60px;
+    line-height: 50px;
 	}
 
 }
