@@ -22,7 +22,7 @@
     top: 0;
     left: 50%;
     margin-left: -100px;
-    background-color: #BDBF09;
+    background-color: #183649;
     z-index: 9000;
     border-radius: 10px;
   }
@@ -57,14 +57,14 @@
   }
 
 .zero {
-    background-color: black;
+    background-color: #27363f;
     position: relative;
     height: 70vh;
     @media(max-width: 767px) {
       height: 28vh;
     }
     video {
-      position: relative;
+    position: relative;
     opacity: 0.6;
     width: 100%;
     }
@@ -146,6 +146,24 @@ margin-bottom: 420px !important;
 .three {
   background-color: #dfe7ec;
   margin-bottom: 50px;
+  padding-top: 80px;
+  margin-bottom: 260px;
+  .contact-form-wrapper {
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    padding: 3%;
+    background-color:  white;
+    opacity: 0;
+    box-shadow: 0px 30px 50px 0px rgba(11,12,17,0.7);
+    #gform_submit_button_1 {
+      background-color:  #2292A4;
+      padding: 2%;
+      border: none !important;
+      box-shadow: 3px 3px 9px 0px  rgba(11,12,17,0.2);
+    }
+  }
 }
 
 
@@ -156,6 +174,14 @@ margin-bottom: 420px !important;
   background: -moz-linear-gradient(top,rgb(0, 0, 0),rgb(33,79,107)); /*Fx 3.6-15*/
   background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(33,79,107)); /*Standard*/
     background-attachment: fixed;
+    .contact-form-wrapper {
+      display: block;
+      margin: 0 auto;
+      max-width: 800px;
+      width: 100%;
+      padding: 7%;
+      background-color:  white;
+    }
 }
 
 

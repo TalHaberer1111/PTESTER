@@ -146,16 +146,36 @@ get_header(); ?>
 
       </div>
     </section>
-    <section class="panel three mx-auto">
+    <section id="trigger33" class="panel three mx-auto">
       <div class="white-triangle">
 
       </div>
+      <div id="C-form" class="contact-form-wrapper">
+        <?php echo do_shortcode('[gravityform id="1" title="false" description="false"]'); ?>
+      </div>
 
+      <script>
+
+      // init controller
+      var controller = new ScrollMagic.Controller();
+
+      // build scene
+      var scene = new ScrollMagic.Scene({triggerElement: "#trigger33", duration: 0,})
+      // trigger animation by adding a css class
+      .setClassToggle("#C-form", "fadeInUpBig")
+      .addTo(controller);
+
+
+      </script>
     </section>
+
+
     <div id="triggerfooter">
 
     <section class="panel four">
       <div id="four"></div>
+
+
 
     </section>
 
