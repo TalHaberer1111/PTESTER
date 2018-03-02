@@ -29,6 +29,8 @@ $(document).ready(function($) {
 			}
 	})
 
+	  $("img").lazyload();
+
 
 });
 
@@ -49,10 +51,10 @@ $(document).ready(function($) {
 				</button>
 				</div>
 				<div class="menu-list">
-				<a class="fade-in-one"  href="<?php echo home_url( '/blog' ); ?>">Our Story</a><br>
-				<a class="fade-in-two mission" href="#">Our Mission</a><br>
-				<a class="fade-in-three community" href="#">Community Outreach</a><br>
-				<a class="fade-in-four volunteer" href="#">Volunteer Portal</a><br>
+				<a class="fade-in-four"  href="<?php echo home_url( '/blog' ); ?>">Our Story</a><br>
+				<a class="fade-in-three mission" href="#">Our Mission</a><br>
+				<a class="fade-in-two community" href="#">Community Outreach</a><br>
+				<a class="fade-in-one volunteer" href="#">Volunteer Portal</a><br>
 				</div>
 				</div>
 

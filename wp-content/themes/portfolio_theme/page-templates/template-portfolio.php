@@ -55,6 +55,21 @@ get_header(); ?>
 
       <div id="triangle1" class="black-triangle"></div>
 
+      <div class="white-box-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+            </div>
+            <div class="col-12 col-md-6">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
     </div>
       <div id="trigger11" class="video-container">
       <div class="container">
@@ -174,6 +189,16 @@ get_header(); ?>
 
     <section class="panel four">
       <div id="four"></div>
+      <div class="slider1">
+        <?php echo do_shortcode('[slick-carousel-slider design="design-6" category="3" slidestoshow="2" variablewidth="true" autoplay="false" dots="false"]'); ?>
+
+      </div>
+
+      <div class="slider2">
+        <?php echo do_shortcode('[slick-carousel-slider slidestoshow="1" design="design-6" centermode="true" variablewidth="true" category="3"]'); ?>
+
+      </div>
+
 
 
 

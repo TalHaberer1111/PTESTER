@@ -30,7 +30,7 @@
 
 	</footer>
 
-	<script>
+	<!-- <script>
 
 	// init controller
 	var controller = new ScrollMagic.Controller();
@@ -43,7 +43,7 @@
 
 
 
-	</script>
+	</script> -->
 
 
 

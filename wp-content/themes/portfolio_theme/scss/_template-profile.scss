@@ -4,6 +4,7 @@
   .wrapper {
     border-left: 20px solid #183649;
     border-right: 20px solid black;
+    padding-bottom: 120px;
   }
   .blackline {
     position: fixed;
@@ -59,7 +60,7 @@
 .zero {
     background-color: #27363f;
     position: relative;
-    height: 70vh;
+    height: 80vh;
     @media(max-width: 767px) {
       height: 28vh;
     }
@@ -90,15 +91,22 @@
 
 
 .panel.one {
-background-color: #BDBF09;
-// box-shadow: 2px 2px 25px !important;
+background-color: #BDBF09 !important;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,eae4e1+100,f2e8e8+100 */
+// background: #ffffff; /* Old browsers */
+// /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+// background: -moz-linear-gradient(left, #ffffff 0%, #eae4e1 100%, #f2e8e8 100%); /* FF3.6-15 */
+// background: -webkit-linear-gradient(left, #ffffff 0%,#eae4e1 100%,#f2e8e8 100%); /* Chrome10-25,Safari5.1-6 */
+// background: linear-gradient(to right, #ffffff 0%,#eae4e1 100%,#f2e8e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2e8e8',GradientType=1 ); /* IE6-8 */
 margin-bottom: 400px;
+position: relative;
 @media(max-width: 767px) {
 // height: 800px !important;
 margin-bottom: 420px !important;
 }
 .card-section {
-    padding-top: 100px;
+    padding-top: 220px;
     .card {
       box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.9);
       height: 400px;
@@ -115,23 +123,48 @@ margin-bottom: 420px !important;
       }
     }
   }
+  .white-box-wrapper {
+    background-color: #183649;
+    // background: url("../images/design.png") no-repeat;
+    // background-size: cover;
+    max-width: 600px;
+    height: 350px;
+    width: 100%;
+    position: absolute;
+    top: -120px;
+    right: 40px;
+    padding: 3%;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.45);
+    border: 5px solid black;
+    p{
+      margin-top: 10px;
+      color: white;
+    }
+  }
 
 
 
 }
 
 .two {
-  background-color: #2292A4;
+  // background: rgb(0, 0, 0); /* Old Browsers */
+  background: -webkit-linear-gradient(top,rgb(0, 0, 0),rgb(33,79,107)) !important; /*Safari 5.1-6*/
+  background: -o-linear-gradient(top,rgb(0, 0, 0),rgb(33,79,107)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(top,rgb(0, 0, 0),rgb(33,79,107)); /*Fx 3.6-15*/
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(33,79,107)) !important; /*Standard*/
   background-attachment: fixed;
-    background-position: center center;
+  // background: url("../images/blue-wave2.jpg") no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-size: 100% auto;
     .slider-wrapper {
       max-width: 900px;
       width: 100%;
       margin: 0 auto;
       display: block;
-      padding-top: 120px;
+      padding-top: 60px;
       font-family: 'Yanone Kaffeesatz', sans-serif;
-      color: black;
+      color: white;
       .wpsisac-slick-slider.design-5 .slick-image-slide .slide-wrap .slick-slider-short-content p {
         font-size: 40px;
         line-height: 56px;
@@ -145,6 +178,8 @@ margin-bottom: 420px !important;
 
 .three {
   background-color: #dfe7ec;
+  background: url("../images/whiteback.jpg") no-repeat;
+  background-size: cover;
   margin-bottom: 50px;
   padding-top: 80px;
   margin-bottom: 260px;
@@ -174,13 +209,17 @@ margin-bottom: 420px !important;
   background: -moz-linear-gradient(top,rgb(0, 0, 0),rgb(33,79,107)); /*Fx 3.6-15*/
   background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(33,79,107)); /*Standard*/
     background-attachment: fixed;
-    .contact-form-wrapper {
-      display: block;
-      margin: 0 auto;
-      max-width: 800px;
-      width: 100%;
-      padding: 7%;
-      background-color:  white;
+  // height: 120vh !important;
+    // .contact-form-wrapper {
+    //   display: block;
+    //   margin: 0 auto;
+    //   max-width: 800px;
+    //   width: 100%;
+    //   padding: 7%;
+    //   background-color:  white;
+    // }
+    .slider2 {
+      margin-top: -20px;
     }
 }
 

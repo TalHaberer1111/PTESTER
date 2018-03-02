@@ -76,6 +76,8 @@
 // }
 
 All sizes
+
 jQuery(document).ready(function($) {
+
 
 });
