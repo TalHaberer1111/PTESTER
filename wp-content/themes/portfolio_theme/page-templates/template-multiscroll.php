@@ -11,6 +11,7 @@ get_header(); ?>
    		<b>ONE</b>
    	</section>
    	<section class="panel green">
+    <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/images/messy.jpg"></div>
    		<b>TWO</b>
    	</section>
    	<section class="panel red">

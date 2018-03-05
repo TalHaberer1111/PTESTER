@@ -11,7 +11,7 @@ get_header(); ?>
       <div class="video-container">
           <!-- <div class="filter"></div> -->
           <video autoplay loop>
-              <source src="<?php echo get_stylesheet_directory_uri(); ?>/videos/For_wes.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+              <source src="<?php echo get_stylesheet_directory_uri(); ?>/videos/Productive-Morning.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
           </video>
       </div>
     </div>
@@ -26,7 +26,7 @@ get_header(); ?>
           // build scene
           var scene = new ScrollMagic.Scene({triggerElement: "#trigger4", duration: "100%"})
           // trigger animation by adding a css class
-          .setClassToggle("#headerMain", "fadeInRight")
+          .setClassToggle("#headerMain", "fadeOutUp")
           .addTo(controller);
 
           // build scene
@@ -75,7 +75,7 @@ get_header(); ?>
       <div class="container">
         <div class="row card-section">
           <div class="col-12 col-md-4">
-            <div id="card1" class="card mx-auto" style="width: 18rem;">
+            <div id="card1" class="card text-center mx-auto" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -87,7 +87,7 @@ get_header(); ?>
           </div>
 
           <div class="col-12 col-md-4">
-            <div id="card2" class="card mx-auto" style="width: 18rem;">
+            <div id="card2" class="card text-center mx-auto" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -99,7 +99,7 @@ get_header(); ?>
           </div>
 
           <div class="col-12 col-md-4">
-            <div id="card3" class="card mx-auto" style="width: 18rem;">
+            <div id="card3" class="card text-center mx-auto" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -109,7 +109,7 @@ get_header(); ?>
             </div>
           </div>
           </div>
-
+        <img class="black-line" class="mx-auto" src="<?php echo get_stylesheet_directory_uri(); ?>/images/line-black.png" alt="">
         </div>
 
       </div>
@@ -126,21 +126,21 @@ get_header(); ?>
       .addTo(controller);
 
       // build scene
-      var scene = new ScrollMagic.Scene({triggerElement: "#trigger11", duration: 0,})
+      var scene = new ScrollMagic.Scene({triggerElement: "#trigger11", duration: "120%"})
       // trigger animation by adding a css class
-      .setClassToggle("#card1", "fade-in-one")
+      .setClassToggle("#card1", "bounceInDown")
       .addTo(controller);
 
       // build scene
-      var scene = new ScrollMagic.Scene({triggerElement: "#trigger11", duration: 0,})
+      var scene = new ScrollMagic.Scene({triggerElement: "#trigger11", duration: "120%"})
       // trigger animation by adding a css class
-      .setClassToggle("#card2", "fade-in-two")
+      .setClassToggle("#card2", "bounceInDown2")
       .addTo(controller);
 
       // build scene
-      var scene = new ScrollMagic.Scene({triggerElement: "#trigger11", duration: 0,})
+      var scene = new ScrollMagic.Scene({triggerElement: "#trigger11", duration: "120%"})
       // trigger animation by adding a css class
-      .setClassToggle("#card3", "fade-in-three")
+      .setClassToggle("#card3", "bounceInDown3")
       .addTo(controller);
 
 
@@ -152,15 +152,32 @@ get_header(); ?>
     </section>
 
 
+<div id="trigger77">
 
     <section class="panel two">
       <div class="video-container">
-        <div class="slider-wrapper">
+        <div id="quoteslider" class="slider-wrapper">
           <?php echo do_shortcode('[slick-slider category="2" design="design-5" centermode="true" fade="true" arrows="false" autoplay="true" speed="2000"]'); ?>
         </div>
 
       </div>
     </section>
+
+    <script>
+
+    // init controller
+    var controller = new ScrollMagic.Controller();
+
+    // build scene
+    var scene = new ScrollMagic.Scene({triggerElement: "#trigger77", duration: 0,})
+    // trigger animation by adding a css class
+    .setClassToggle("#quoteslider", "fadeInUpBig")
+    .addTo(controller);
+
+
+    </script>
+</div>
+
     <section id="trigger33" class="panel three mx-auto">
       <div class="white-triangle">
 
@@ -190,17 +207,9 @@ get_header(); ?>
     <section class="panel four">
       <div id="four"></div>
       <div class="slider1">
-        <?php echo do_shortcode('[slick-carousel-slider design="design-6" category="3" slidestoshow="2" variablewidth="true" autoplay="false" dots="false"]'); ?>
+        <?php echo do_shortcode('[slick-carousel-slider design="design-6" category="3" slidestoshow="3" centermode="true" autoplay="true" dots="false" arrows="true"  speed=”3000″ ]'); ?>
 
       </div>
-
-      <div class="slider2">
-        <?php echo do_shortcode('[slick-carousel-slider slidestoshow="1" design="design-6" centermode="true" variablewidth="true" category="3"]'); ?>
-
-      </div>
-
-
-
 
     </section>
 
