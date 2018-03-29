@@ -4,56 +4,71 @@
 get_header(); ?>
 
 
- <div id="wrapper" class="wrapper fullpage">
-
-   <div id="pinContainer">
-   	<section class="panel blue">
-   		<b>ONE</b>
-   	</section>
-   	<section class="panel green">
-    <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/images/messy.jpg"></div>
-   		<b>TWO</b>
-   	</section>
-   	<section class="panel red">
-   		<b>THREE</b>
-   	</section>
-   	<section class="panel yellow">
-   		<b>FOUR</b>
-   	</section>
-   </div>
-   <script>
-     $(document).ready(function($) {
-   	$(function () { // wait for document ready
-   		// init
-   		var controller = new ScrollMagic.Controller();
-
-   		// define movement of panels
-   		var wipeAnimation = new TimelineMax()
-   			.fromTo("section.panel.green", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
-   			.fromTo("section.panel.red",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
-   			.fromTo("section.panel.yellow", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
-
-   		// create scene to pin and link animation
-   		new ScrollMagic.Scene({
-   				triggerElement: "#pinContainer",
-   				triggerHook: "onLeave",
-   				duration: "300%"
-   			})
-   			.setPin("#pinContainer")
-   			.setTween(wipeAnimation)
-   			// .addIndicators() // add indicators (requires plugin)
-   			.addTo(controller);
-   	});
+ <div class="wrapper fullpage">
 
 
-  	});
-   </script>
-
-
-
+   <div class="scrollContent">
+ 	<section id="titlechart">
+ 		<div id="description">
+ 			<h1>Simple Pinning</h1>
+ 			<h2>Two examples of basic pinning.</h2>
+ 			<ol>
+ 				<li>A pin of a scene that has a duration will be pinned for the repective ammount of scrolled pixels and then released again.</li>
+ 				<li>If no duration is defined, the pinned element will never be released unless scrolling back past the trigger position.</li>
+ 			</ol>
+ 			<p>
+ 				Note that the first pin pushes down the following elements. A gap with the size of the scene's duration appears.<br>
+ 				This can be disabled using the option <code>pushFollowers: false</code>. For scenes with a duration of 0 "<code>pushFollowers</code>" is always disabled.
+ 			</p>
+ 			<p>
+ 				For more information check out the documentation on <a href="../../docs/ScrollMagic.Scene.html#setPin">Scene.setPin()</a>.
+ 			</p>
+ 			<a href="#" class="viewsource">view source</a>
+ 		</div>
+ 		<script>
+ 			// init controller
+ 			var controller = new ScrollMagic.Controller();
+ 		</script>
+ 	</section>
+ 	<section class="demo">
+ 		<div class="spacer s2"></div>
+ 		<div id="trigger1" class="spacer s0"></div>
+ 		<div id="pin1" class="box2 blue">
+ 			<p>Stay where you are (at least for a while).</p>
+ 			<a href="#" class="viewsource">view source</a>
+ 		</div>
+ 		<div class="spacer s2"></div>
+ 		<script>
+ 			$(function () { // wait for document ready
+ 				// build scene
+ 				var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 800})
+ 								.setPin("#pin1")
+ 								.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+ 								.addTo(controller);
+ 			});
+ 		</script>
+ 	</section>
+ 	<section class="demo">
+ 		<div class="spacer s2"></div>
+ 		<div id="trigger2" class="spacer s0"></div>
+ 		<div id="pin2" class="box2 blue">
+ 			<p>Take me with you!</p>
+ 			<a href="#" class="viewsource">view source</a>
+ 		</div>
+ 		<div class="spacer s2"></div>
+ 		<script>
+ 			$(function () { // wait for document ready
+ 				// build scene
+ 				var scene = new ScrollMagic.Scene({triggerElement: "#pin2"})
+ 								.setPin("#pin2")
+ 								.addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
+ 								.addTo(controller);
+ 			});
+ 		</script>
+ 	</section>
+ 	<div class="spacer s_viewport"></div>
  </div>
-
-
+ </div>
 
 
 <?php get_footer(); ?>

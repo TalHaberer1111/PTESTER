@@ -2,8 +2,8 @@
   font-family: 'Work Sans', sans-serif;
   position: relative;
   .wrapper {
-    border-left: 20px solid #183649;
-    border-right: 20px solid black;
+    border-left: 20px solid #233577;
+    border-right: 20px solid #BDBF09;
     padding-bottom: 40px;
   }
   .blackline {
@@ -12,7 +12,7 @@
     left: 0;
     height: 20px;
     width: 100%;
-    background-color: black;
+    background-color: #BDBF09;
     z-index: 1111;
   }
   .black-block {
@@ -23,7 +23,7 @@
     top: 0;
     left: 50%;
     margin-left: -100px;
-    background-color: #183649;
+    background-color: #233577;
     z-index: 9000;
     border-radius: 10px;
   }
@@ -35,7 +35,7 @@
     position: fixed;
     top: 340px;
     left: 0px;
-    background-color: #183649;
+    background-color: #233577;
     z-index: 9000;
     border-bottom-right-radius: 50px;
     @media(max-width: 767px) {
@@ -48,76 +48,125 @@
   position: relative;
 }
 
-
-
 .panel {
     width: 100%;
     height: 100vh;
     border-top: none;
-   // position: relative;
   }
 
-.zero {
-    background-color: #27363f;
+  .join-image {
+    margin: 0 auto;
+    display: block;
+    padding-top: 10px;
+  }
+
+  .learn {
+    color: white;
+    text-decoration: none !important;
+    text-align: center !important;
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 2px;
+    letter-spacing: 3px;
+    font-family: 'Londrina Solid', cursive;
+    max-width: 160px;
+    width: 100%;
+    height: 42px;
+    border: 3px solid white;
+    transition: .3s ease-in all;
+  }
+
+  .learn:hover {
+    text-decoration: none !important;
+    background-color: white;
+    color: #BDBF09;
+  }
+
+    .zero {
+    background-color: black;
     position: relative;
-    height: 80vh;
+    height: 70vh;
     @media(max-width: 767px) {
-      height: 28vh;
+      height: 29vh;
     }
     video {
     position: relative;
-    opacity: 0.6;
+    opacity: 0.5;
     width: 100%;
     }
     h1 {
       position: absolute;
-      top: 30%;
-      bottom: 50%;
+      top: calc(52% - 100px);
+      // text-transform: uppercase;
+      letter-spacing: 4px;
+      line-height: 70px;
       width: 100%;
-      font-size: 180px;
+      font-size: 145px;
       z-index: 7;
       text-align: center;
-      color:  white;
-      font-family: 'Yanone Kaffeesatz', sans-serif;
+      color: #ffffd8;
+      text-shadow: .5px .5px 41px black;
+      font-family: 'Londrina Solid', cursive;
+      font-weight: 900;
       opacity: 0;
       @media(max-width: 1024px) and (min-width: 767px) {
-        font-size: 125px;
+        font-size: 60px;
       }
       @media(max-width: 767px) {
-        font-size: 80px;
+        font-size: 30px;
+        top: 75px;
+        line-height: normal;
       }
+      // .souls {
+      //   color: #131d3f;
+      //   text-shadow: none;
+      //   text-shadow: .4px .4px 42px white;
+      // }
     }
 }
 
 
 .panel.one {
-background-color: #BDBF09 !important;
-margin-bottom: 400px;
+background-color: #20242b !important;
 position: relative;
-// background: url("../images/design6.png");
-// background-size: 36% auto;
+margin-bottom: 700px;
 @media(max-width: 767px) {
-margin-bottom: 420px !important;
+margin-top: -60px;
+}
+.image-front {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  z-index: 1;
 }
 .card-section {
-    padding-top: 320px;
+  position: relative;
+  z-index: 3;
+  padding-top: 280px;
+  margin-bottom: 300px;
     .card {
-      box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.9);
+      transition: .3s ease-in;
+      padding-top: 30px;
+      box-shadow: 0 30px 50px 0 rgba(11,12,17,.3);
       height: 400px;
-      background-color: #C5EFCB;
       opacity: 0;
+      font-family: 'Work Sans', sans-serif;
       @media(max-width: 767px) {
       margin-top: 25px;
       }
      .card-text {
         font-family: 'Rubik', sans-serif;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 18px;
       }
     .card-title {
-      font-family: 'Rubik', sans-serif;
       font-weight: 900;
       font-size: 26px;
+    }
+    #card1 {
+      background-color: #FEF1B5 !important;
     }
     }
     @media(max-width: 767px) {
@@ -125,74 +174,111 @@ margin-bottom: 420px !important;
         display: none;
       }
     }
-    .black-line {
-      max-width: 800px;
-      height: auto;
-      width: 100%;
-      margin: 0 auto;
-      display: block;
-      margin-top: -100px;
+  }
+  .image-front {
+    @media (min-width: 992px) {
+      margin-left: 8%;
     }
+    margin-top: 80px !important;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
   }
   .white-box-wrapper {
-    background-color: #183649;
-    max-width: 600px;
-    height: 350px;
+    @media(max-width: 767px) {
+        display: none;
+  }
+    opacity: 0;
+    background: url("../images/tealback.jpg") no-repeat;
+    background-size: cover;
+    max-width: 480px;
+    height: 300px;
     width: 100%;
     position: absolute;
-    top: -120px;
-    right: 40px;
+    bottom: -160px;
+    // top:calc(-10% - 90px);
+    right: 5%;
     padding: 3%;
     box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.45);
-    // border: 5px solid black;
-    p{
-      margin-top: 10px;
+    z-index: 5;
+    transition: 1s ease-in-out;
+    h1 {
       color: white;
+      font-size: 32px;
+      line-height: 42px;
+      font-family: 'Jockey One', sans-serif;
+      margin-top: 20px !important;
+      text-align: center;
+      width: 80%;
+      margin: 0 auto;
     }
-  }
-
-
-
+}
+// .white-box-wrapper:hover {
+//   margin-right: 40px;
+// }
 }
 
 .two {
-  // background: rgb(0, 0, 0); /* Old Browsers */
-  background: -webkit-linear-gradient(top,rgb(0, 0, 0),rgb(33,79,107)) !important; /*Safari 5.1-6*/
-  background: -o-linear-gradient(top,rgb(0, 0, 0),rgb(33,79,107)); /*Opera 11.1-12*/
-  background: -moz-linear-gradient(top,rgb(0, 0, 0),rgb(33,79,107)); /*Fx 3.6-15*/
-  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(33,79,107)) !important; /*Standard*/
-  background-attachment: fixed;
-  // background: url("../images/blue-wave2.jpg") no-repeat;
-  background-position: bottom;
+  background: url("../images/blue3.jpg") center;
+  // background-attachment: fixed;
   background-size: cover;
-  background-size: 100% auto;
+  padding-bottom: 300px !important;
+  margin-bottom: 300px;
     .slider-wrapper {
-      max-width: 900px;
+      @media (min-width: 992px) {
+        max-width: 75%;
+      }
       width: 100%;
       margin: 0 auto;
       display: block;
-      padding-top: 100px;
-      font-family: 'Yanone Kaffeesatz', sans-serif;
+      padding-top: 120px;
+      padding-bottom: 40px;
+      font-family: 'Work Sans', sans-serif;
       color: white;
-      opacity: 0;
+      font-weight: 300;
       .wpsisac-slick-slider.design-5 .slick-image-slide .slide-wrap .slick-slider-short-content p {
-        font-size: 40px;
-        line-height: 56px;
+        font-size: 22px;
         @media(max-width: 767px) {
-        font-size: 32px !important;
+        font-size: 16px !important;
       }
     }
+}
+.callout-three-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  height: 320px;
+  background: url("../images/white2.png") no-repeat center;
+  background-size: cover;
+  display: block;
+  margin: 10px auto;
+  padding: 6%;
+  a {
+    color: black;
+    font-size: 22px;
+    border: 2px solid black;
+    padding: 6px 12px !important;
+    margin-top: 30px !important;
+    text-align: center !important;
+    display: block;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
 }
 }
 
 
 .three {
   background-color: #dfe7ec;
-  background: url("../images/whiteback.jpg") no-repeat;
+  background: url("../images/back.png") no-repeat;
   background-size: cover;
   margin-bottom: 50px;
   padding-top: 80px;
-  margin-bottom: 260px;
   .contact-form-wrapper {
     display: block;
     margin: 0 auto;
@@ -213,18 +299,19 @@ margin-bottom: 420px !important;
 
 
 .four {
-  background: rgb(0, 0, 0); /* Old Browsers */
-  background: -webkit-linear-gradient(top,rgb(0, 0, 0),rgb(33,79,107)); /*Safari 5.1-6*/
-  background: -o-linear-gradient(top,rgb(0, 0, 0),rgb(33,79,107)); /*Opera 11.1-12*/
-  background: -moz-linear-gradient(top,rgb(0, 0, 0),rgb(33,79,107)); /*Fx 3.6-15*/
-  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(33,79,107)); /*Standard*/
-    background-attachment: fixed;
-  border-top: 25px solid #BDBF09;
-  .slider1 {
-    margin-top: 10%;
-    background-color: rgba(223,231,236,0.2);
-    padding: 4%;
+  background: url("../images/d2.jpg") center;
+  background-size: cover;
+  font-family: 'Londrina Solid', cursive;
+  font-weight: 300;
+  p {
+    display: none;
   }
+  h1 {
+    font-size: 90px;
+    color: white;
+    padding-top: calc(65% - 200px);
+  }
+
 
 }
 

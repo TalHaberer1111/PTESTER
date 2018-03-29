@@ -25,5 +25,8 @@
     "gulp-uglify": "^2.1.2",
     "gulp-util": "^3.0.8",
     "jshint": "^2.9.4"
+  },
+  "dependencies": {
+    "vivus": "^0.4.3"
   }
 }

@@ -513,6 +513,15 @@ h1.main, p.demos {
     -webkit-animationfill-mode: forwards;
   }
 
+  .fadeInDown11 {
+     -webkit-animation: fadeInDown 1.6s ease-in;
+     animation: fadeInDown 1.6s ease-in;
+     animation-delay: .5s;
+     -webkit-animation-delay: .5s;
+     animation-fill-mode: forwards;
+    -webkit-animationfill-mode: forwards;
+  }
+
   .fadeInDown2 {
      -webkit-animation: fadeInDown2 1s ease-in;
      animation: fadeInDown2 1s ease-in;
@@ -661,14 +670,14 @@ transform: scale(.9);
         transform: translateY(20px);
      }
   }
-
-  .fadeInUpBig {
-    -webkit-animation: fadeInUpBig  1.6s ease-in;
-    animation: fadeInUpBig  1.6s ease-in;
-    // animation-delay: .2s;
-    animation-fill-mode: forwards;
-   -webkit-animation-mode: forwards;
-  }
+  // 
+  // .fadeInUpBig {
+  //   -webkit-animation: fadeInUpBig  1.6s ease-in;
+  //   animation: fadeInUpBig  1.6s ease-in;
+  //   // animation-delay: .2s;
+  //   animation-fill-mode: forwards;
+  //  -webkit-animation-mode: forwards;
+  // }
 
   @-webkit-keyframes fadeOutUp {
         0% {
@@ -826,8 +835,8 @@ transform: scale(.9);
         }
 
         .rollOut {
-           -webkit-animation: rollOut 1.1s ease-in;
-           animation: rollOut 1.1s ease-in;
+           -webkit-animation: rollOut 2s;
+           animation: rollOut 2s;
            -webkit-animation-fill-mode: forwards;
            animation-fill-mode: forwards;
         }

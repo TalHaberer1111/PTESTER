@@ -13,7 +13,7 @@
 <div>
 
 
-	<footer role="contentinfo" id="site-footer">
+	<footer role="contentinfo" id="site-footer" class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".2s">
 		<div class="black-triangle2">
 
 		</div>

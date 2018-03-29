@@ -1,7 +1,11 @@
 <?php
-/* Template Name: Portfolio */
+/* Template Name: portfolio */
 
 get_header(); ?>
+
+<script>
+        new WOW().init();
+        </script>
 
 <div id="wrapper" class="fullpage wrapper">
   <a href="http://www.google.com/"><div id="block" class="black-block"></div></a>
@@ -11,11 +15,11 @@ get_header(); ?>
       <div class="video-container">
           <!-- <div class="filter"></div> -->
           <video autoplay loop>
-              <source src="<?php echo get_stylesheet_directory_uri(); ?>/videos/Productive-Morning.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+              <source src="<?php echo get_stylesheet_directory_uri(); ?>/videos/boywindow.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
           </video>
       </div>
     </div>
-    <h1 id="headerMain">Something Here</h1>
+    <h1 id="headerMain">Unbounded <br> <span class="souls">Souls</span></h1>
 
     <script>
 
@@ -26,7 +30,7 @@ get_header(); ?>
           // build scene
           var scene = new ScrollMagic.Scene({triggerElement: "#trigger4", duration: "100%"})
           // trigger animation by adding a css class
-          .setClassToggle("#headerMain", "fadeOutUp")
+          .setClassToggle("#headerMain", "fadeInDown11")
           .addTo(controller);
 
           // build scene
@@ -55,18 +59,24 @@ get_header(); ?>
 
       <div id="triangle1" class="black-triangle"></div>
 
-      <div class="white-box-wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col col-12 col-md-7">
 
-            </div>
-            <div class="col-12 col-md-6">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <img class="image-front wow bounceInUp" data-wow-duration="5s" data-wow-delay="1s" src="<?php echo get_stylesheet_directory_uri(); ?>/images/boy1.jpg" alt="">
+          </div>
+
+          <div class="col col-12 col-md-5">
+
+            <div class="white-box-wrapper rollOut">
+              <div class="container">
+                  <h1 class="join">Join the mission to change the planet!</h1>
+                  <a "join-button" href="<?php echo home_url( '/volunteer' ); ?>"><img class="join-image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/circles.png" alt="infinity icon"> <br><span class="learn">Learn More</span></a>
+              </div>
             </div>
 
           </div>
+
         </div>
       </div>
 
@@ -75,41 +85,38 @@ get_header(); ?>
       <div class="container">
         <div class="row card-section">
           <div class="col-12 col-md-4">
-            <div id="card1" class="card text-center mx-auto" style="width: 18rem;">
+            <div id="card1" class="card cards text-center mx-auto" style="width: 18rem;">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <h5 class="card-title">Climate Change</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+              <a href="#" class="card-link">Learn More</a>
             </div>
           </div>
           </div>
 
           <div class="col-12 col-md-4">
-            <div id="card2" class="card text-center mx-auto" style="width: 18rem;">
+            <div id="card2" class="card cards text-center mx-auto" style="width: 18rem;">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <h5 class="card-title">Child Protection</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+              <a href="#" class="card-link1">Learn More</a>
             </div>
           </div>
           </div>
 
           <div class="col-12 col-md-4">
-            <div id="card3" class="card text-center mx-auto" style="width: 18rem;">
+            <div id="card3" class="card cards text-center mx-auto" style="width: 18rem;">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <h5 class="card-title">Global Refugee Crisis</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+              <a href="#" class="card-link">Learn More</a>
             </div>
           </div>
           </div>
-        <img class="black-line" class="mx-auto" src="<?php echo get_stylesheet_directory_uri(); ?>/images/line-black.png" alt="">
+          <hr>
         </div>
 
       </div>
@@ -126,19 +133,19 @@ get_header(); ?>
       .addTo(controller);
 
       // build scene
-      var scene = new ScrollMagic.Scene({triggerElement: "#trigger11", duration: "120%"})
+      var scene = new ScrollMagic.Scene({triggerElement: "#trigger11", duration: "120%", offset: 300})
       // trigger animation by adding a css class
       .setClassToggle("#card1", "bounceInDown")
       .addTo(controller);
 
       // build scene
-      var scene = new ScrollMagic.Scene({triggerElement: "#trigger11", duration: "120%"})
+      var scene = new ScrollMagic.Scene({triggerElement: "#trigger11", duration: "120%", offset: 300})
       // trigger animation by adding a css class
       .setClassToggle("#card2", "bounceInDown2")
       .addTo(controller);
 
       // build scene
-      var scene = new ScrollMagic.Scene({triggerElement: "#trigger11", duration: "120%"})
+      var scene = new ScrollMagic.Scene({triggerElement: "#trigger11", duration: "120%", offset: 300})
       // trigger animation by adding a css class
       .setClassToggle("#card3", "bounceInDown3")
       .addTo(controller);
@@ -155,28 +162,28 @@ get_header(); ?>
 <div id="trigger77">
 
     <section class="panel two">
-      <div class="video-container">
-        <div id="quoteslider" class="slider-wrapper">
-          <?php echo do_shortcode('[slick-slider category="2" design="design-5" centermode="true" fade="true" arrows="false" autoplay="true" speed="2000"]'); ?>
+      <div class="video-container container">
+
+        <div id="quoteslider" class="slider-wrapper wow	fadeIn" data-wow-duration="2s" data-wow-delay="1s">
+          <?php echo do_shortcode('[slick-slider category="2" design="design-5" centermode="true" fade="true" arrows="false" autoplay="true" speed="3000"]'); ?>
         </div>
 
+        <div class="callout-three-wrapper wow slideInUp" data-wow-duration="2s" data-wow-delay="1.5s">
+          <div class="container">
+            <div class="row">
+              <div class="col col-md-8">
+                <h1 class="padding-top">Join the force to better human kindness around the globe.</h1>
+                <p>Sign up to recieve the latest updates, volunteer suggestions, and blog posts.</p>
+              </div>
+              <div class="col col-md-4">
+                <a class="button btn-call-three padding-top mx-auto wow fadeInUp" href="#">Sign up</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-
-    <script>
-
-    // init controller
-    var controller = new ScrollMagic.Controller();
-
-    // build scene
-    var scene = new ScrollMagic.Scene({triggerElement: "#trigger77", duration: 0,})
-    // trigger animation by adding a css class
-    .setClassToggle("#quoteslider", "fadeInUpBig")
-    .addTo(controller);
-
-
-    </script>
-</div>
+  </div>
 
     <section id="trigger33" class="panel three mx-auto">
       <div class="white-triangle">
@@ -206,11 +213,23 @@ get_header(); ?>
 
     <section class="panel four">
       <div id="four"></div>
-      <div class="slider1">
-        <?php echo do_shortcode('[slick-carousel-slider design="design-6" category="3" slidestoshow="3" centermode="true" autoplay="true" dots="false" arrows="true"  speed=”3000″ ]'); ?>
+      <div class="container-fluid">
+        <div class="row text-center mx-auto">
+          <div class="col col-md-6">
+            <h1>Unbounded <br> Souls</h1>
+          </div>
+          <div class="col col-md-3">
+            <div class="card-slider-wrapper">
 
+            </div>
+          </div>
+          <div class="col col-md-3">
+
+
+          </div>
+
+        </div>
       </div>
-
     </section>
 
 

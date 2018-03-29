@@ -9,6 +9,9 @@
 <link href="https://fonts.googleapis.com/css?family=Righteous|Work+Sans:100,300,500,600,700,800" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Rubik:400,700,900|Yanone+Kaffeesatz:700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Rubik:400,700,900|Voltaire|Yanone+Kaffeesatz:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=BioRhyme|Bungee" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Asset|Federo|Jockey+One|Londrina+Solid:100,300,400,900" rel="stylesheet">
+
 <?php wp_head(); ?>
 <script type="text/javascript">
 $(document).ready(function($) {
@@ -48,10 +51,10 @@ $(document).ready(function($) {
 				</button>
 				</div>
 				<div class="menu-list">
-				<a class="fade-in-four" href="<?php echo home_url( '/blog' ); ?>">Our Story</a><br>
+				<a class="fade-in-four" href="<?php echo home_url( '/' ); ?>">Home</a><br>
 				<a class="fade-in-three mission" href="#">Our Mission</a><br>
 				<a class="fade-in-two community" href="#">Community Outreach</a><br>
-				<a class="fade-in-one volunteer" href="#">Volunteer Portal</a><br>
+				<a class="fade-in-one volunteer" href="<?php echo home_url( '/volunteer' ); ?>">Volunteer Portal</a><br>
 				</div>
 				</div>
 
