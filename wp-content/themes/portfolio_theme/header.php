@@ -40,7 +40,6 @@ $(document).ready(function($) {
 </head>
 <body id="trigger14" <?php body_class(); ?>>
 <div id="wrapper">
-	<!-- <a href="#main" class="sr-only sr-only-focusable skipnav"><?php _e('Skip to main content', 'basetheme'); ?></a> -->
 	<header id="header" class="clearfix">
 		<div class="blackline"></div>
 		<div class="menu-overlay"></div>

@@ -10,28 +10,61 @@ get_header(); ?>
 
 <div id="wrapper" class="wrapper">
   <div class="container-fluid">
-    <div class="volunteer-hero-wrapper text-center">
+    <div id="trigger-v" class="volunteer-hero-wrapper text-center">
 
-      <h1 class="wow fadeIn" data-wow-duration="2s">Volunteer with us</h1>
-      <p class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">Join our global mission</p>
+      <h1 class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">Volunteer with us</h1>
+      <p class="wow fadeIn" data-wow-duration="2s" data-wow-delay="2s">Join our global mission</p>
 
-      <img class="circle1 circles wow fadeInDownBig" data-wow-duration="3s"  src="<?php echo get_stylesheet_directory_uri(); ?>/images/circle1.png" alt="">
+      <img id="circle1" class="circle1 circles" src="<?php echo get_stylesheet_directory_uri(); ?>/images/circle1.png" alt="">
 
-      <img class="circle2 circles wow fadeInUpBig" data-wow-duration="3s"  src="<?php echo get_stylesheet_directory_uri(); ?>/images/circle2.png" alt="">
+      <img id="circle2" class="circle2 circles" src="<?php echo get_stylesheet_directory_uri(); ?>/images/circle2.png" alt="">
 
-      <img class="circle3 circles wow fadeInDownBig" data-wow-duration="3s"  src="<?php echo get_stylesheet_directory_uri(); ?>/images/circle1.png" alt="">
+      <img id="circle3" class="circle3 circles" src="<?php echo get_stylesheet_directory_uri(); ?>/images/circle1.png" alt="">
 
-      <img class="circle4 circles wow fadeInUpBig" data-wow-duration="3s"  src="<?php echo get_stylesheet_directory_uri(); ?>/images/circle2.png" alt="">
+      <img id="circle4" class="circle4 circles" src="<?php echo get_stylesheet_directory_uri(); ?>/images/circle2.png" alt="">
+
+      <script>
+
+      // init controller
+      var controller = new ScrollMagic.Controller();
+
+      // build scene
+      var scene = new ScrollMagic.Scene({triggerElement: "#trigger-v", duration: "100%", offset: 100,})
+      // trigger animation by adding a css class
+      .setClassToggle("#circle1", "fadeInDown11")
+      .addTo(controller);
+
+      // build scene
+      var scene = new ScrollMagic.Scene({triggerElement: "#trigger-v", duration: "100%", offset: 100,})
+      // trigger animation by adding a css class
+      .setClassToggle("#circle2", "fadeInUpBig1")
+      .addTo(controller);
+
+      // build scene
+      var scene = new ScrollMagic.Scene({triggerElement: "#trigger-v", duration: "100%", offset: 100,})
+      // trigger animation by adding a css class
+      .setClassToggle("#circle3", "fadeInDown11")
+      .addTo(controller);
+
+      // build scene
+      var scene = new ScrollMagic.Scene({triggerElement: "#trigger-v", duration: "100%", offset: 100,})
+      // trigger animation by adding a css class
+      .setClassToggle("#circle4", "fadeInUpBig1")
+      .addTo(controller);
+
+      </script>
 
 
     </div>
   </div>
 
     <div id="sectionOne" class="section-one">
+        <img id="i1" class="i1 imageLines" src="<?php echo get_stylesheet_directory_uri(); ?>/images/i1.png" alt="">
+        <img id="i2" class="i2 imageLines" src="<?php echo get_stylesheet_directory_uri(); ?>/images/i2.png" alt="">
       <div class="container box-volunteer">
         <div class="row">
           <div class="col-12 col-md-6">
-            <img class="wow fadeInUpBig" data-wow-duration="3s" data-wow-delay="3s" src="<?php echo get_stylesheet_directory_uri(); ?>/images/volunteer2.jpg" alt="volunteer kids">
+            <img class="wow fadeInUpBig v-kids" data-wow-duration="3s"  src="<?php echo get_stylesheet_directory_uri(); ?>/images/volunteer2.jpg" alt="volunteer kids">
           </div>
 
           <div class="col-12 col-md-6">
@@ -51,16 +84,31 @@ get_header(); ?>
 
           </div>
         </div>
-
       </div>
+
+      <script>
+
+      // init controller
+      var controller = new ScrollMagic.Controller();
+
+      // build scene
+      var scene = new ScrollMagic.Scene({triggerElement: "#sectionOne", duration: 0,})
+      // trigger animation by adding a css class
+      .setClassToggle("#i2", "fadeInUpBig2")
+      .addTo(controller);
+
+      // build scene
+      var scene = new ScrollMagic.Scene({triggerElement: "#sectionOne", duration: 0,})
+      // trigger animation by adding a css class
+      .setClassToggle("#i1", "fadeInDown12")
+      .addTo(controller);
+
+      </script>
 
     </div>
 
     <div class="section-programs">
       <div class="container-fluid">
-
-        <!-- <div class="row">
-          <div class="col"> -->
 
             <?php if( have_rows('volunteer_programs') ): ?>
 
@@ -98,8 +146,6 @@ get_header(); ?>
 
                     </div>
 
-
-
                 </li>
 
               <?php endwhile; ?>
@@ -108,7 +154,20 @@ get_header(); ?>
 
             <?php endif; ?>
 
-          <!-- </div>
+      </div>
+
+    </div>
+
+    <div class="section-stories">
+      <!-- <img class="people-vector wow fadeInUp" data-wow-duration="1s" src="<?php echo get_stylesheet_directory_uri(); ?>/images/people.png" alt=""> -->
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col col-12 col-md-6">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+          </div>
+          <div class="col col-12 col-md-6">
+            <h1>Something Here</h1>
+          </div>
         </div> -->
 
       </div>

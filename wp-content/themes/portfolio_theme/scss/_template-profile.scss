@@ -129,7 +129,7 @@
 
 
 .panel.one {
-background-color: #20242b !important;
+background-color: #08152a !important;
 position: relative;
 margin-bottom: 700px;
 @media(max-width: 767px) {
@@ -177,14 +177,15 @@ margin-top: -60px;
   }
   .image-front {
     @media (min-width: 992px) {
-      margin-left: 8%;
+      margin-left: 5%;
     }
     margin-top: 80px !important;
-    max-width: 700px;
+    max-width: 800px;
     display: block;
     margin: 0 auto;
     height: auto;
     width: 100%;
+    opacity: 0.6;
   }
   .white-box-wrapper {
     @media(max-width: 767px) {
@@ -197,7 +198,7 @@ margin-top: -60px;
     height: 300px;
     width: 100%;
     position: absolute;
-    bottom: -160px;
+    bottom: -200px;
     // top:calc(-10% - 90px);
     right: 5%;
     padding: 3%;
@@ -225,7 +226,7 @@ margin-top: -60px;
   // background-attachment: fixed;
   background-size: cover;
   padding-bottom: 300px !important;
-  margin-bottom: 300px;
+  margin-bottom: 700px;
     .slider-wrapper {
       @media (min-width: 992px) {
         max-width: 75%;
@@ -233,7 +234,7 @@ margin-top: -60px;
       width: 100%;
       margin: 0 auto;
       display: block;
-      padding-top: 120px;
+      padding-top: 60px;
       padding-bottom: 40px;
       font-family: 'Work Sans', sans-serif;
       color: white;
@@ -274,20 +275,48 @@ margin-top: -60px;
 
 
 .three {
-  background-color: #dfe7ec;
-  background: url("../images/back.png") no-repeat;
+  background-color: white;
+  border: 5px solid midnightblue;
+  // background: url("../images/back.png") no-repeat;
   background-size: cover;
   margin-bottom: 50px;
   padding-top: 80px;
+}
+
+
+.panel.four {
+  background-color: #e2e3e6;
+  background-size: cover;
+  font-family: 'Londrina Solid', cursive;
+  font-weight: 300;
+  margin-bottom: 800px !important;
+  .v1{
+    margin-top: -70px;
+    width: 80%;
+    height: auto;
+  }
+  .wrap1 {
+    margin-top: calc(-50% - 60px);
+  }
+  p {
+    font-size: 24px;
+    font-weight: 300;
+    padding: 10%;
+    padding-top: 2% !important;
+  }
+  .contact {
+    margin: 9%;
+  }
   .contact-form-wrapper {
     display: block;
     margin: 0 auto;
-    max-width: 800px;
+    max-width:88%;
+    height: auto;
     width: 100%;
     padding: 3%;
+    margin-top: 6% !important;
     background-color:  white;
-    opacity: 0;
-    box-shadow: 0px 30px 50px 0px rgba(11,12,17,0.7);
+    box-shadow: 0px 10px 30px 0px rgba(11,12,17,0.3);
     #gform_submit_button_1 {
       background-color:  #2292A4;
       padding: 2%;
@@ -295,23 +324,6 @@ margin-top: -60px;
       box-shadow: 3px 3px 9px 0px  rgba(11,12,17,0.2);
     }
   }
-}
-
-
-.four {
-  background: url("../images/d2.jpg") center;
-  background-size: cover;
-  font-family: 'Londrina Solid', cursive;
-  font-weight: 300;
-  p {
-    display: none;
-  }
-  h1 {
-    font-size: 90px;
-    color: white;
-    padding-top: calc(65% - 200px);
-  }
-
 
 }
 

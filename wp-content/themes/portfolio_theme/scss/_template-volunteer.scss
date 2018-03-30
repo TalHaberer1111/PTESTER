@@ -3,7 +3,7 @@
     display: none !important;
   }
   .hamburger-menu  {
-  background: whitesmoke!important;
+  background: whitesmoke !important;
   }
   font-family: 'Work Sans', sans-serif;
   .volunteer-hero-wrapper {
@@ -26,7 +26,8 @@
       font-weight: 900;
       letter-spacing: 2px;
       @media (max-width: 767px) {
-        font-size: 40px;
+        font-size: 32px;
+        top: 420px;
       }
     }
     P {
@@ -46,11 +47,13 @@
         font-size: 18px;
         max-width: 220px;
         margin-left: -110px;
+        top: 470px;
       }
     }
     .circles {
+      opacity: 0;
       @media(max-width: 767px) {
-        max-width: 14% !important;
+        max-width: 24% !important;
       }
     }
     .circle1 {
@@ -86,6 +89,27 @@
       max-width: 98px;
       height: auto;
     }
+  }
+  .section-one {
+    position: relative;
+   .i1{
+     position: absolute;
+     bottom: 30px;
+     left: 1.5%;
+     z-index: -1;
+     // height: 380px;
+     // width: 50px;
+     opacity: 0;
+   }
+   .i2{
+     position: absolute;
+     top: 60px;
+     right: 1.5%;
+     z-index: -1;
+     // height: 380px;
+     // width: 50px;
+     opacity: 0;
+   }
   }
   .box-volunteer {
     margin-top: 60px;
@@ -142,7 +166,6 @@ ul.program-boxes {
   display: flex;
   // justify-content: space-around;
   flex-wrap: wrap;
-  margin-bottom: 100px !important;
   .program-box {
     max-width: 25%;
     margin: 0;
@@ -176,4 +199,30 @@ ul.program-boxes {
 .program-box:hover {
   opacity: 0.6;
 }
+}
+
+// .wow {
+//   opacity: 0;
+// }
+
+.section-stories {
+  margin-top: 60px;
+  height: 600px;
+  width: 100%;
+  position: relative;
+  background-color: #08152a;
+  .people-vector {
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    left: 50%;
+    max-width: 56%;
+    margin-left: -25%;
+  }
+  // background: url("../images/people.jpg") center;
+  // background-size: 50% auto;
+  // margin-bottom: 120px;
+  // @media(max-width: 767px) {
+  //   background-size: 100% auto;
+  // }
 }

@@ -168,7 +168,7 @@ get_header(); ?>
           <?php echo do_shortcode('[slick-slider category="2" design="design-5" centermode="true" fade="true" arrows="false" autoplay="true" speed="3000"]'); ?>
         </div>
 
-        <div class="callout-three-wrapper wow slideInUp" data-wow-duration="2s" data-wow-delay="1.5s">
+        <div class="callout-three-wrapper wow slideInUp" data-wow-duration="2s" data-wow-delay=".5s">
           <div class="container">
             <div class="row">
               <div class="col col-md-8">
@@ -185,13 +185,11 @@ get_header(); ?>
     </section>
   </div>
 
-    <section id="trigger33" class="panel three mx-auto">
+    <!-- <section id="trigger33" class="panel three mx-auto">
       <div class="white-triangle">
 
       </div>
-      <div id="C-form" class="contact-form-wrapper">
-        <?php echo do_shortcode('[gravityform id="1" title="false" description="false"]'); ?>
-      </div>
+
 
       <script>
 
@@ -206,7 +204,7 @@ get_header(); ?>
 
 
       </script>
-    </section>
+    </section> -->
 
 
     <div id="triggerfooter">
@@ -214,20 +212,35 @@ get_header(); ?>
     <section class="panel four">
       <div id="four"></div>
       <div class="container-fluid">
-        <div class="row text-center mx-auto">
-          <div class="col col-md-6">
-            <h1>Unbounded <br> Souls</h1>
-          </div>
-          <div class="col col-md-3">
-            <div class="card-slider-wrapper">
+        <div class="row text-center topRow">
+          <div class="col col-12 col-md-6">
+            <div class="witebox">
+              <img class="v1" src="<?php echo get_stylesheet_directory_uri(); ?>/images/volunteer3.png" alt="">
+            </div>
 
+          </div>
+          <div class="col col-12 col-md-6">
+            <div class="witebox">
+              <h1 class="contact">Contact Us</h1>
+              <div id="C-form" class="contact-form-wrapper">
+                <?php echo do_shortcode('[gravityform id="1" title="false" description="false"]'); ?>
+              </div>
             </div>
           </div>
-          <div class="col col-md-3">
 
-
+        </div>
+        <div class="row text-center">
+          <div class="col col-12 col-md-6">
+            <div class="wrap1">
+              <h1 class="header-one">something</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
           </div>
-
+          <div class="col col-12 col-md-6">
+            <div class="witebox">
+            
+            </div>
+          </div>
         </div>
       </div>
     </section>
