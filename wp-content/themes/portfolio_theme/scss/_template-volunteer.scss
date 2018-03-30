@@ -97,8 +97,8 @@
      bottom: 30px;
      left: 1.5%;
      z-index: -1;
-     // height: 380px;
-     // width: 50px;
+    max-width: 292px;
+    width: 100%;
      opacity: 0;
    }
    .i2{
@@ -106,8 +106,8 @@
      top: 60px;
      right: 1.5%;
      z-index: -1;
-     // height: 380px;
-     // width: 50px;
+    max-width: 292px;
+    width: 100%;
      opacity: 0;
    }
   }
@@ -159,7 +159,7 @@
 }
 
 ul.program-boxes {
-  background-color: whitesmoke;
+  // background-color: whitesmoke;
   // margin-left: -1%;
   width: 100%;
   list-style: none;
