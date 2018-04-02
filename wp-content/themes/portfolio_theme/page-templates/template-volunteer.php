@@ -13,7 +13,7 @@ get_header(); ?>
     <div id="trigger-v" class="volunteer-hero-wrapper text-center">
 
       <h1 class="wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">Volunteer with us</h1>
-      <p class="wow fadeIn" data-wow-duration="2s" data-wow-delay="2s">Join our global mission</p>
+      <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="2s">Join our global mission</p>
 
       <img id="circle1" class="circle1 circles" src="<?php echo get_stylesheet_directory_uri(); ?>/images/circle1.png" alt="">
 
@@ -110,9 +110,9 @@ get_header(); ?>
     <div class="section-programs">
       <div class="container-fluid">
 
-            <?php if( have_rows('volunteer_programs') ): ?>
+        <?php if( have_rows('volunteer_programs') ): ?>
 
-              <ul class="program-boxes">
+          <ul class="program-boxes">
 
               <?php while( have_rows('volunteer_programs') ): the_row();
 
@@ -126,63 +126,78 @@ get_header(); ?>
 
                 <li class="program-box">
 
-                  <?php if( $link ): ?>
-                    <a href="<?php echo $link; ?>">
-                  <?php endif; ?>
+                    <?php if( $link ): ?>
+                      <a href="<?php echo $link; ?>">
+                    <?php endif; ?>
 
-                    <img src="<?php echo $image; ?>"/>
+                      <img src="<?php echo $image; ?>"/>
 
-                  <?php if( $link ): ?>
-                    </a>
-                  <?php endif; ?>
+                    <?php if( $link ): ?>
+                      </a>
+                    <?php endif; ?>
 
-                    <div class="program-wrap">
-                      <p class="name">
-                        <?php echo $name; ?>
-                      </p>
-                      <div class="content">
-                        <?php echo $content; ?>
+                      <div class="program-wrap">
+                        <p class="name">
+                          <?php echo $name; ?>
+                        </p>
+                        <div class="content">
+                          <?php echo $content; ?>
+                        </div>
+
                       </div>
-
-                    </div>
 
                 </li>
 
-              <?php endwhile; ?>
+            <?php endwhile; ?>
 
-              </ul>
+            </ul>
 
-            <?php endif; ?>
+          <?php endif; ?>
 
       </div>
 
     </div>
+
+    <!-- section stories begins -->
 
     <div class="section-stories">
-      <!-- <img class="people-vector wow fadeInUp" data-wow-duration="1s" src="<?php echo get_stylesheet_directory_uri(); ?>/images/people.png" alt=""> -->
       <div class="container">
         <div class="row">
-          <!-- <div class="col col-12 col-md-6">
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+          <div class="timeline-wrapper wow slideInUp" data-wow-duration="2s">
+              <?php echo do_shortcode('[timeline-express limit="6"]'); ?>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-bottom-content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col col-12 col-md-6">
+            <div class="description-box wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+              <h2>Title</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
           </div>
           <div class="col col-12 col-md-6">
-            <h1>Something Here</h1>
+            <div class="description-box wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
+            <h2>Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
           </div>
-        </div> -->
 
+        </div>
       </div>
 
     </div>
 
-  </div>
+  <!-- section stories ends -->
 
 </div>
 
+<!-- page wrapper ends -->
 
 
-
-
-
-
-
-<?php get_footer(); ?>
+<div class="site-footer-wrapper">
+  <?php get_footer(); ?>
+</div>

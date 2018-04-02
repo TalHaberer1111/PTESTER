@@ -32,17 +32,17 @@
     }
     P {
       position: absolute;
-      top: calc(75% - 60px);
+      top: calc(72% - 60px);
       text-align: center;
-      font-size: 30px;
+      font-size: 24px;
       color: #233577;
       font-weight: 500;
       background-color: white;
       padding: 5px;
       width: 100%;
-      max-width: 450px;
+      max-width: 320px;
       left: 50%;
-      margin-left: -225px;
+      margin-left: -160px;
       @media (max-width: 767px) {
         font-size: 18px;
         max-width: 220px;
@@ -100,7 +100,10 @@
     max-width: 292px;
     width: 100%;
      opacity: 0;
+     @media(max-width: 1350px){
+       display: none;
    }
+ }
    .i2{
      position: absolute;
      top: 60px;
@@ -109,6 +112,8 @@
     max-width: 292px;
     width: 100%;
      opacity: 0;
+     @media(max-width: 1350px){
+       display: none;
    }
   }
   .box-volunteer {
@@ -158,6 +163,7 @@
   }
 }
 
+
 ul.program-boxes {
   // background-color: whitesmoke;
   // margin-left: -1%;
@@ -173,7 +179,7 @@ ul.program-boxes {
     position: relative;
     transition: .4s ease all;
     @media(max-width: 767px) {
-      max-width: 100%;
+      max-width: 90%;
     }
   }
   li {
@@ -207,7 +213,8 @@ ul.program-boxes {
 
 .section-stories {
   margin-top: 60px;
-  height: 600px;
+  padding-bottom: 160px;
+  height: auto;
   width: 100%;
   position: relative;
   background-color: #08152a;
@@ -219,10 +226,53 @@ ul.program-boxes {
     max-width: 56%;
     margin-left: -25%;
   }
-  // background: url("../images/people.jpg") center;
-  // background-size: 50% auto;
-  // margin-bottom: 120px;
-  // @media(max-width: 767px) {
-  //   background-size: 100% auto;
-  // }
+  .timeline-wrapper {
+    padding-top: 30px;
+    .cd-timeline-content {
+      background: white !important;
+      font-weight: 500;
+      color: midnightblue !important;
+      box-shadow: none !important;
+      .cd-timeline-item-title {
+        font-size: 24px;
+        font-weight: 900;
+        @media(max-width: 767px) {
+          font-size: 20px;
+        }
+      }
+      .timeline-date {
+        color: royalblue !important;
+        font-size: 14px;
+      }
+      p {
+        font-size: 18px;
+        @media(max-width: 767px) {
+          font-size: 16px;
+        }
+      }
+      img {
+        display: none;
+      }
+    }
+  }
+}
+.section-bottom-content {
+  padding-top: 90px;
+  padding-bottom: 160px;
+  .description-box {
+    height: 300px;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    background-color: whitesmoke;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    padding: 6%;
+    @media(max-width: 992px) {
+      margin: 10px;
+      font-size: 16px;
+    }
+  }
+}
 }

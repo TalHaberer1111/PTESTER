@@ -137,15 +137,22 @@ margin-top: -60px;
 }
 .image-front {
   position: absolute;
-  top: 1%;
-  left: 1%;
+  top: 120px;
   z-index: 1;
+  width: 80%;
+  opacity: 0.5;
+  left: 50%;
+  margin-left: -40%;
+
 }
 .card-section {
   position: relative;
   z-index: 3;
   padding-top: 280px;
   margin-bottom: 300px;
+  @media(max-width: 767px) {
+  padding-top: 20px;
+  }
     .card {
       transition: .3s ease-in;
       padding-top: 30px;
@@ -170,22 +177,10 @@ margin-top: -60px;
     }
     }
     @media(max-width: 767px) {
-      #card2, #card3 {
+      #card2 {
         display: none;
       }
     }
-  }
-  .image-front {
-    @media (min-width: 992px) {
-      margin-left: 5%;
-    }
-    margin-top: 80px !important;
-    max-width: 800px;
-    display: block;
-    margin: 0 auto;
-    height: auto;
-    width: 100%;
-    opacity: 0.6;
   }
   .white-box-wrapper {
     @media(max-width: 767px) {
@@ -229,7 +224,7 @@ margin-top: -60px;
   margin-bottom: 700px;
     .slider-wrapper {
       @media (min-width: 992px) {
-        max-width: 75%;
+        max-width: 80%;
       }
       width: 100%;
       margin: 0 auto;
@@ -238,7 +233,7 @@ margin-top: -60px;
       padding-bottom: 40px;
       font-family: 'Work Sans', sans-serif;
       color: white;
-      font-weight: 300;
+      font-weight: 400;
       .wpsisac-slick-slider.design-5 .slick-image-slide .slide-wrap .slick-slider-short-content p {
         font-size: 22px;
         @media(max-width: 767px) {
@@ -249,12 +244,12 @@ margin-top: -60px;
 .callout-three-wrapper {
   max-width: 1200px;
   width: 100%;
-  height: 320px;
+  height: auto;
   background: url("../images/white2.png") no-repeat center;
   background-size: cover;
   display: block;
   margin: 10px auto;
-  padding: 6%;
+  padding: 3%;
   a {
     color: black;
     font-size: 22px;
@@ -290,14 +285,31 @@ margin-top: -60px;
   font-family: 'Londrina Solid', cursive;
   font-weight: 300;
   margin-bottom: 800px !important;
+  position: relative;
+  .c-one {
+    position: absolute;
+    top: -400px;
+    left: 70px;
+    z-index: 1;
+    width: 200px;
+    height: auto;
+  }
+  .c-two {
+    position: absolute;
+    top: -300px;
+    left:  20px;
+    z-index: 1;
+    width: 160px;
+    height: auto;
+  }
   .v1{
     margin-top: -70px;
     width: 80%;
     height: auto;
   }
-  .wrap1 {
-    margin-top: calc(-46% - 20px);
-  }
+  // .wrap1 {
+  //   margin-top: -200px;
+  // }
   p {
     font-size: 24px;
     font-weight: 300;

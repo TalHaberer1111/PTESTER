@@ -85,7 +85,7 @@ get_header(); ?>
       <div class="container">
         <div class="row card-section">
           <div class="col-12 col-md-4">
-            <div id="card1" class="card cards text-center mx-auto" style="width: 18rem;">
+            <div id="card1" class="card cards text-center mx-auto">
             <div class="card-body">
               <h5 class="card-title">Climate Change</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -96,7 +96,7 @@ get_header(); ?>
           </div>
 
           <div class="col-12 col-md-4">
-            <div id="card2" class="card cards text-center mx-auto" style="width: 18rem;">
+            <div id="card2" class="card cards text-center mx-auto">
             <div class="card-body">
               <h5 class="card-title">Child Protection</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -107,7 +107,7 @@ get_header(); ?>
           </div>
 
           <div class="col-12 col-md-4">
-            <div id="card3" class="card cards text-center mx-auto" style="width: 18rem;">
+            <div id="card3" class="card cards text-center mx-auto">
             <div class="card-body">
               <h5 class="card-title">Global Refugee Crisis</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -165,7 +165,7 @@ get_header(); ?>
       <div class="video-container container">
 
         <div id="quoteslider" class="slider-wrapper wow	fadeIn" data-wow-duration="2s" data-wow-delay="1s">
-          <?php echo do_shortcode('[slick-slider category="2" design="design-5" centermode="true" fade="true" arrows="false" autoplay="true" speed="3000"]'); ?>
+          <?php echo do_shortcode('[slick-slider category="2" design="design-5" centermode="true" arrows="false" autoplay="true" speed="3000"]'); ?>
         </div>
 
         <div class="callout-three-wrapper wow slideInUp" data-wow-duration="2s" data-wow-delay=".5s">
@@ -215,7 +215,7 @@ get_header(); ?>
         <div class="row text-center topRow">
           <div class="col col-12 col-md-6">
             <div class="witebox">
-              <img class="v1" src="<?php echo get_stylesheet_directory_uri(); ?>/images/volunteer3.png" alt="">
+              <img class="v1 wow fadeIn" data-wow-duration="2s" data-wow-delay="1s"  src="<?php echo get_stylesheet_directory_uri(); ?>/images/volunteer3.png" alt="">
             </div>
 
           </div>
@@ -231,14 +231,11 @@ get_header(); ?>
         </div>
         <div class="row text-center">
           <div class="col col-12 col-md-6">
-            <div class="wrap1">
-              <h1 class="header-one">something</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-          </div>
+            <img class="c-one wow fadeInDownBig" data-wow-duration="2s" data-wow-delay="1s" src="<?php echo get_stylesheet_directory_uri(); ?>/images/circle1.png" alt="">
+            <img class="c-two wow fadeInDownBig" data-wow-duration="2s" data-wow-delay="1.5s" src="<?php echo get_stylesheet_directory_uri(); ?>/images/circle2.png" alt="">
           <div class="col col-12 col-md-6">
             <div class="witebox">
-            
+
             </div>
           </div>
         </div>
