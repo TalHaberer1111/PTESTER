@@ -4,8 +4,8 @@
 get_header(); ?>
 
 <script>
-        new WOW().init();
-        </script>
+    new WOW().init();
+</script>
 
 <div id="wrapper" class="fullpage wrapper">
   <a href="http://www.google.com/"><div id="block" class="black-block"></div></a>
@@ -13,12 +13,12 @@ get_header(); ?>
   <section id"trigger4" class="panel zero">
     <div class="hero-wrapper">
       <div class="video-container">
-          <!-- <div class="filter"></div> -->
           <video autoplay loop>
               <source src="<?php echo get_stylesheet_directory_uri(); ?>/videos/boywindow.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
           </video>
       </div>
     </div>
+
     <h1 id="headerMain">Unbounded <br> <span class="souls">Souls</span></h1>
 
     <script>
@@ -51,11 +51,8 @@ get_header(); ?>
   </section>
 
 
-
-
-    <section class="panel one">
+  <section class="panel one">
       <div id="trigger22">
-
 
       <div id="triangle1" class="black-triangle"></div>
 
@@ -110,7 +107,7 @@ get_header(); ?>
             <div id="card3" class="card cards text-center mx-auto">
             <div class="card-body">
               <h5 class="card-title">Global Refugee Crisis</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">How can we as a society, help the most weak and unfortunate of us all.</p>
               <a href="#" class="card-link">Card link</a>
               <a href="#" class="card-link">Learn More</a>
             </div>
@@ -156,7 +153,7 @@ get_header(); ?>
 
   </div>
 
-    </section>
+</section>
 
 
 <div id="trigger77">
@@ -165,7 +162,7 @@ get_header(); ?>
       <div class="video-container container">
 
         <div id="quoteslider" class="slider-wrapper wow	fadeIn" data-wow-duration="2s" data-wow-delay="1s">
-          <?php echo do_shortcode('[slick-slider category="2" design="design-5" centermode="true" arrows="false" autoplay="true" speed="3000"]'); ?>
+          <?php echo do_shortcode('[slick-slider category="2" design="design-5" centermode="true" arrows="false" autoplay="true" speed="10000"]'); ?>
         </div>
 
         <div class="callout-three-wrapper wow slideInUp" data-wow-duration="2s" data-wow-delay=".5s">
@@ -183,6 +180,7 @@ get_header(); ?>
         </div>
       </div>
     </section>
+
   </div>
 
     <!-- <section id="trigger33" class="panel three mx-auto">
@@ -215,7 +213,7 @@ get_header(); ?>
         <div class="row text-center topRow">
           <div class="col col-12 col-md-6">
             <div class="witebox">
-              <img class="v1 wow fadeIn" data-wow-duration="2s" data-wow-delay="1s"  src="<?php echo get_stylesheet_directory_uri(); ?>/images/volunteer3.png" alt="">
+              <img class="v1 wow fadeIn" data-wow-duration="2s" src="<?php echo get_stylesheet_directory_uri(); ?>/images/volunteer3.png" alt="">
             </div>
 
           </div>
@@ -233,10 +231,8 @@ get_header(); ?>
           <div class="col col-12 col-md-6">
             <img class="c-one wow fadeInDownBig" data-wow-duration="2s" data-wow-delay="1s" src="<?php echo get_stylesheet_directory_uri(); ?>/images/circle1.png" alt="">
             <img class="c-two wow fadeInDownBig" data-wow-duration="2s" data-wow-delay="1.5s" src="<?php echo get_stylesheet_directory_uri(); ?>/images/circle2.png" alt="">
-          <div class="col col-12 col-md-6">
-            <div class="witebox">
-
-            </div>
+            <div class="col col-12 col-md-6">
+              <a class="bottom-panel-link wow fadeInDown" data-wow-duration="2s" data-wow-delay="1s" href="#">Link here</a>
           </div>
         </div>
       </div>
@@ -272,12 +268,13 @@ get_header(); ?>
     		}
     	});
 
+	});
 
-        	});
-    </script>
+  </script>
 
 	<div class="blackline"></div>
 </div>
 
+</div>
 
 <?php get_footer(); ?>

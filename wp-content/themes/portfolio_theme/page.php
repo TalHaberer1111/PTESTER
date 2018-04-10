@@ -24,6 +24,12 @@ while ( have_posts() ) : the_post();
 	// End of the loop.
 endwhile;
 ?>
+
+<div class="content-wrapper-main text-center">
+
+		<?php get_content(); ?>
+
+</div>
 </main>
 
 <?php get_footer(); ?>

@@ -18,15 +18,44 @@
 
 		</div>
 
-		<!-- <div class="logo-center mx-auto">
-			<img src="http://icons.iconarchive.com/icons/icons8/windows-8/512/Astrology-Year-Of-Monkey-icon.png" alt="">
-		</div> -->
-		<!-- <div id="footer-inner">
-			<nav id="footer-nav-container" class="nav-container">
-			 	<?php wp_nav_menu( array( "theme_location" => "footernav", "container" => false, "menu_id" => "footer-nav" ) ); ?>
-			</nav>
-			<div class="copyright">&copy; <?php echo date('Y'); ?></div>
-		</div> -->
+		<div class="container">
+			<div class="row">
+				<div class="col-6 col-sm-6 col-md-3">
+					<ul>
+						<li><a href="#">link here</a></li>
+						<li><a href="#">link here</a></li>
+						<li><a href="#">link here</a></li>
+						<li><a href="#">link here</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-sm-6 col-md-3">
+					<ul>
+						<li><a href="#">link here</a></li>
+						<li><a href="#">link here</a></li>
+						<li><a href="#">link here</a></li>
+						<li><a href="#">link here</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-sm-6 col-md-3">
+					<ul>
+						<li><a href="#">link here</a></li>
+						<li><a href="#">link here</a></li>
+						<li><a href="#">link here</a></li>
+						<li><a href="#">link here</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-sm-6 col-md-3">
+					<ul>
+						<li><a href="#">link here</a></li>
+						<li><a href="#">link here</a></li>
+						<li><a href="#">link here</a></li>
+						<li><a href="#">link here</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+		</div>
 
 	</footer>
 

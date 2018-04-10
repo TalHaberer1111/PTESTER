@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Rubik:400,700,900|Voltaire|Yanone+Kaffeesatz:700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=BioRhyme|Bungee" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Asset|Federo|Jockey+One|Londrina+Solid:100,300,400,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Do+Hyeon|Gugi|IBM+Plex+Serif:100,200,300,400,500,600,700,700i|Roboto+Slab:400,700" rel="stylesheet">
 
 <?php wp_head(); ?>
 <script type="text/javascript">
@@ -38,6 +39,9 @@ $(document).ready(function($) {
 
 </script>
 </head>
+<!-- <div class='container'>
+  <i class='preloader'></i>
+</div> -->
 <body id="trigger14" <?php body_class(); ?>>
 <div id="wrapper">
 	<header id="header" class="clearfix">
@@ -51,16 +55,15 @@ $(document).ready(function($) {
 				</div>
 				<div class="menu-list">
 				<a class="fade-in-four" href="<?php echo home_url( '/' ); ?>">Home</a><br>
-				<a class="fade-in-three mission" href="#">Our Mission</a><br>
+				<a class="fade-in-three mission" href="<?php echo home_url( '/our-story' ); ?>">Our Mission</a><br>
 				<a class="fade-in-two community" href="#">Community Outreach</a><br>
 				<a class="fade-in-one volunteer" href="<?php echo home_url( '/volunteer' ); ?>">Volunteer Portal</a><br>
 				</div>
 				</div>
 
-				<a href="#" class="content text-center explode-link">
-                <h1></h1>
-                <!--<span class="see-more">See More</span>-->
-            </a>
+				<!-- <a href="#" class="content text-center explode-link">
+
+            </a> -->
 
 
 	</header>
