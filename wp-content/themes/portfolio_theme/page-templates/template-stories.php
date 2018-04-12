@@ -10,9 +10,9 @@ get_header(); ?>
 
   <div id="wrapper" class="page-wrapper">
 
-    <div class="hero-wrapper">
-      <h1>Our Story</h1>
-      <h2>How our Organization Began</h2>
+    <div class="hero-wrapper wow fadeInDown" data-wow-duration="1s">
+      <h1 class="wow fadeInDown" data-wow-duration="3s">Our Story</h1>
+      <h2 class="wow fadeInDown" data-wow-duration="4s">How our Organization Began</h2>
 
     </div>
 
@@ -45,6 +45,18 @@ get_header(); ?>
         <div class="row rowOne">
 
           <div class="col col-12 col-sm-4 cM column1">
+            <div class="container">
+              <div class="row text-white rowBox">
+                <div class="col-6 wow fadeInUp" data-wow-duration="1s">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <div class="col-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+
+              </div>
+
+            </div>
 
           </div>
 
@@ -57,13 +69,36 @@ get_header(); ?>
           </div>
 
         </div>
+        <!-- <div id="trigger1" class="rellax">
 
-        <div class="row">
+          <img class="rellax" data-rellax-percentage="0.9" data-relax-speed="-9" data-rellax-zindex="99" src="<?php echo get_stylesheet_directory_uri(); ?>/png/shark-fin.png" alt="">
 
-          <div class="col col-12 col-sm-12 cM column4">
+        </div> -->
+
+        <div id="sectionBottom" class="section-bottom">
+                <img class="rellax vol" data-rellax-percentage="0.5" data-rellax-speed="-4" data-rellax-zindex="99" src="<?php echo get_stylesheet_directory_uri(); ?>/images2/vol.png" alt="">
+
+                <img class="rellax explore" data-rellax-percentage="0.5" data-rellax-speed="-5" data-rellax-zindex="99" src="<?php echo get_stylesheet_directory_uri(); ?>/images2/explore.png" alt="">
+
+                <img class="rellax teach" data-rellax-percentage="0.2" data-rellax-speed="-1" data-rellax-zindex="99" src="<?php echo get_stylesheet_directory_uri(); ?>/images2/teach.png" alt="">
+
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+              </div>
+              <div class="col">
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+              </div>
+
+            </div>
 
           </div>
 
+        </div>
+
+
+        <div class="two">
 
         </div>
 
@@ -71,6 +106,9 @@ get_header(); ?>
 
     </div>
 
-
+    <script>
+      // Accepts any class name
+      var rellax = new Rellax('.rellax');
+    </script>
 
   </div>
